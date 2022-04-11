@@ -24,9 +24,15 @@ const List = (props: ProductManagerRemove) => {
                                         <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 border" >
                                             Name
                                         </th>
+                                        <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 border" >
+                                            ảnh
+                                        </th>
                                         
                                         <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 border">
                                             Price
+                                        </th>
+                                        <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4 border">
+                                            Mô tả
                                         </th>
                                        
                                         <th scope="col-2" className="text-sm font-medium text-gray-900 px-6 py-4 border">
@@ -39,7 +45,9 @@ const List = (props: ProductManagerRemove) => {
                                         return <tr>
                                             <td className='border text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap'>{index + 1}</td>
                                             <td className='border text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap'>{item.name}</td>
+                                            <td><img className="mx-auto" src={item.img} alt="" width="200px" /></td>
                                            <td className='border text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap'>{item.price}</td>
+                                           <td className='border text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap'>{item.decs  }</td>
                                             <button onClick={() => props.onRemove(item._id)}>Xóa</button>
                                             <Link className='p-3' to={`/products/${item._id}/edit`}>Edit</Link> <br />
                                         </tr>

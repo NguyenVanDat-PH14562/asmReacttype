@@ -5,6 +5,10 @@ import { useNavigate } from "react-router-dom";
 type Input = {
   name: string,
   price: number,
+  img: string,
+  decs: string,
+
+
   
 }
 type AddProps = {
@@ -46,7 +50,25 @@ const Add = (props: AddProps) => {
                        {errors.name && <span>Bắt buộc phải nhập trường này!</span>}
 
           </div>
-          
+          <div className="form-group mb-6">
+            <input type="text" {...register('img')} className="form-control block
+          w-full
+          px-3
+          py-1.5
+          text-base
+          font-normal
+          text-gray-700
+          bg-white bg-clip-padding
+          border border-solid border-gray-300
+          rounded
+          transition
+          ease-in-out
+          m-0
+          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
+              placeholder="Img" />
+                       {errors.img && <span>Bắt buộc phải nhập trường này!</span>}
+
+          </div>
           <div className="form-group mb-6">
             <input type="number"  {...register('price')} className="form-control block
           w-full
@@ -64,7 +86,25 @@ const Add = (props: AddProps) => {
           focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
               placeholder="Price" />
           </div>
-        
+          <div className="form-group mb-6">
+            <input type="text" {...register('decs')} className="form-control block
+          w-full
+          px-3
+          py-1.5
+          text-base
+          font-normal
+          text-gray-700
+          bg-white bg-clip-padding
+          border border-solid border-gray-300
+          rounded
+          transition
+          ease-in-out
+          m-0
+          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
+              placeholder="Decs" />
+                       {errors.name && <span>Bắt buộc phải nhập trường này!</span>}
+
+          </div>
 
           <button type="submit" className="
         w-full
@@ -84,6 +124,7 @@ const Add = (props: AddProps) => {
         transition
         duration-150
         ease-in-out">Send</button>
+        
         </form>
       </div>
     </div>

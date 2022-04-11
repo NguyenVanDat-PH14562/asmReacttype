@@ -7,6 +7,8 @@ import Edit from "../src/page/Edit";
 
 import { ProductType } from './type/Products'
 import { list ,remove,add,update} from './api/product'
+import AdminLayout from './page/layout/AdminLayout';
+import Websitelayout from './page/layout/Websitelayout';
 
 function App() {
   const [products,setProducts] = useState<ProductType[]>([])
@@ -41,8 +43,11 @@ function App() {
       
          <Routes>
                    <Route path='/list'  element={<List products={products} onRemove={onHandleremove}/>}/>
-                   <Route path='/add' element={< Add name='kien' onAdd={onhandlerAdd}/>} />
+                   <Route path='/add' element={< Add name='dat' onAdd={onhandlerAdd}/>} />
                    <Route path='/products/:id/edit' element={<Edit onUpdate={onhanderUpdate}/>} />
+                   <Route path='/admin' element={<AdminLayout/>} />
+                   <Route path='/' element={<Websitelayout/>} />
+
 
 
          </Routes>
