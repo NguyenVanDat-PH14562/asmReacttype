@@ -9,6 +9,8 @@ import { ProductType } from './type/Products'
 import { list ,remove,add,update} from './api/product'
 import AdminLayout from './page/layout/AdminLayout';
 import Websitelayout from './page/layout/Websitelayout';
+import Sigin from './page/admin/Sigin';
+import Sigup from './page/admin/Sigup';
 
 function App() {
   const [products,setProducts] = useState<ProductType[]>([])
@@ -47,6 +49,9 @@ function App() {
                    <Route path='/products/:id/edit' element={<Edit onUpdate={onhanderUpdate}/>} />
                    <Route path='/admin' element={<AdminLayout/>} />
                    <Route path='/' element={<Websitelayout/>} />
+                   <Route path='/sigin' element={<Sigin/>} />
+                   <Route path='/sigup' element={<Sigup/>} />
+
 
 
 

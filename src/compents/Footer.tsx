@@ -7,14 +7,14 @@ const Footer = (props: Props) => {
     <footer className="flex justify-center px-4 text-gray-100 bg-gray-800">
     <div className="container py-6">
         <h1 className="text-center text-lg font-bold lg:text-2xl">
-            Join 31,000+ other and never miss  out on new tips, tutorials, and more.
+            Sneaker luôn muốn hiểu bạn! hãy để lại ý kiến nếu bạn không hài lòng với chúng tôi!
         </h1>
 
         <div className="flex justify-center mt-6">
             <div className="bg-white rounded-lg">
                 <div className="flex flex-wrap justify-between md:flex-row">
-                    <input type="email" className="m-1 p-2 appearance-none text-gray-700 text-sm focus:outline-none" placeholder="Enter your email"/>
-                    <button className="w-full m-1 p-2 text-sm bg-gray-800 rounded-lg font-semibold uppercase lg:w-auto">subscribe</button>
+                    <input type="email" className="m-1 p-2 appearance-none text-gray-700 text-sm focus:outline-none" placeholder="Nội dung phản hồi..."/>
+                    <button className="w-full m-1 p-2 text-sm bg-gray-800 rounded-lg font-semibold uppercase lg:w-auto">Gửi phản hồi!</button>
                 </div>
             </div>
         </div>
