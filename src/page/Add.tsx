@@ -24,7 +24,7 @@ const Add = (props: AddProps) => {
     navigate('/list')
 
   }
-  // Call API
+
   return (
     <div>
       <strong className=" text-xl uppercase pt-4">Thêm Thông Tin Sản Phẩm</strong> <br />

@@ -28,10 +28,7 @@ const Header = (props: Props) => {
                                                 </div>
                                             </div>
                                         </td>
-                                        {/* <td className="px-6 py-4 whitespace-nowrap text-white text-6xl font-thin">
-                                            <a href="#">Sneacker</a>
-
-                                        </td> */}
+                                      
                                         <td className="px-6 py-4 whitespace-nowrap text-left text-sm text-white font-bold leading-normal">
                                             <a href="/sigin">Đăng nhập</a>
                                             <ul className="font-thin text-xs py-2">
